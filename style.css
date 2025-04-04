@@ -1,6 +1,10 @@
 :root {
   --font-family-heading: "Anton", sans-serif;
   --font-family-body: "Noto Sans JP", sans-serif;
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
   --color-white: #fffefc;
   --color-black: #020911;
   --color-accent-red: #f20574;
@@ -15,6 +19,7 @@
   --color-hero-overlay: rgba(57, 24, 111, 0.4);
   --color-course-overlay: rgba(32, 8, 19, 0.63);
 }
+<<<<<<< HEAD
   /*global*/
   *,
   *::before,
@@ -212,6 +217,8 @@ img {
 .hero-main-copy-accent {
   color: var(--color-accent-red);
 }
+=======
+>>>>>>> main
 
 /*global*/
 *,
@@ -322,6 +329,7 @@ img {
     padding: 40px 20px;
   }
 
+<<<<<<< HEAD
 
   .hero-container {
     justify-content: flex-start;
@@ -419,3 +427,13 @@ img {
 .courses-title {
   color: var(--color-white);
 }
+=======
+  .hero-container {
+    justify-content: flex-start;
+  }
+
+  .hero-texts {
+    gap: 20px;
+  }
+}
+>>>>>>> main
