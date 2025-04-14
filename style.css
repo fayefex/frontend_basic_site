@@ -487,3 +487,14 @@ img {
   color: var(--color-accent-red);
   text-align: right;
 }
+.courses-card-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-accent-yellow);
+  font-size: 16px;
+  width: 800px;
+  height: 150px;
+  border-radius: 0px;
+  box-shadow: 4px 4px 0px 0px rgba(242, 5, 116, 1);
+}
