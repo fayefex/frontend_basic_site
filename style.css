@@ -1,7 +1,6 @@
 :root {
   --font-family-heading: "Anton", sans-serif;
   --font-family-body: "Noto Sans JP", sans-serif;
-
   --color-white: #fffefc;
   --color-black: #020911;
   --color-accent-red: #f20574;
@@ -15,6 +14,202 @@
   --color-course-hover-yellow: #f4e877;
   --color-hero-overlay: rgba(57, 24, 111, 0.4);
   --color-course-overlay: rgba(32, 8, 19, 0.63);
+}
+
+/*global*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-body);
+}
+
+img {
+  display: block;
+}
+
+/* header */
+.header {
+  height: 80px;
+  background-color: var(--color-background-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.header-logo-wrapper {
+  margin: 0;
+}
+
+.header-logo {
+  height: 50px;
+}
+
+@media (max-width: 750px) {
+  .header {
+    height: 60px;
+  }
+}
+
+.header-logo {
+  height: 30px;
+}
+
+/* hero */
+.hero {
+  background-image: url("./img/hero.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 94px 40px;
+  position: relative;
+  margin-top: 80px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-hero-overlay);
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+.hero-texts {
+  color: var(--color-accent-yellow);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero-main-copy {
+  font-family: var(--font-family-heading);
+  font-size: 64px;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 0.05em;
+  color: var(--color-accent-yellow);
+}
+
+.hero-main-copy-accent {
+  color: var(--color-accent-red);
+}
+
+/*global*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-body);
+}
+
+img {
+  display: block;
+}
+
+/* header */
+.header {
+  height: 80px;
+  background-color: var(--color-background-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.header-logo-wrapper {
+  margin: 0;
+}
+
+.header-logo {
+  height: 50px;
+}
+
+@media (max-width: 750px) {
+  .header {
+    height: 60px;
+  }
+}
+
+.header-logo {
+  height: 30px;
+}
+
+/* hero */
+.hero {
+  background-image: url("./img/hero.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 94px 40px;
+  position: relative;
+  margin-top: 80px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-hero-overlay);
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+.hero-texts {
+  color: var(--color-accent-yellow);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero-main-copy {
+  font-family: var(--font-family-heading);
+  font-size: 64px;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 0.05em;
+  color: var(--color-accent-yellow);
+}
+
+.hero-main-copy-accent {
+  color: var(--color-accent-red);
 }
 
 /*global*/
@@ -133,4 +328,173 @@ img {
   .hero-texts {
     gap: 20px;
   }
+}
+
+/* about */
+.about {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-background-black);
+  padding: 80px 80px;
+  gap: 20px;
+}
+
+.about-contrainer {
+  background-size: 880px 268px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 40px;
+  position: relative;
+  gap: 40px;
+}
+
+.about-main-copy {
+  height: 48px;
+  font-family: var(--font-family-heading);
+  color: var(--color-white);
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+}
+
+.about-main-copy-accent-1 {
+  color: var(--color-accent-red);
+}
+
+.about-main-copy-accent-2 {
+  color: var(--color-accent-yellow);
+}
+
+.about-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  gap: 20px;
+}
+
+.about-sub-copy {
+  font-family: var(--font-family-body);
+  color: var(--color-white);
+  max-width: 460px;
+}
+
+.about-body-live {
+  width: 320px;
+  height: auto;
+}
+
+@media (max-width: 750px) {
+  .about {
+    padding: 40px 20px 40px 20px;
+  }
+  .about-main-copy {
+    height: 36px;
+    font-size: 24px;
+  }
+
+  .about-body-live {
+    display: none;
+  }
+}
+
+/* courses */
+.courses {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-background-navy);
+  padding: 80px 80px;
+  gap: 30px;
+}
+
+.courses-container {
+  padding: 40px 40px;
+  gap: 40px;
+}
+
+.courses-title {
+  text-align: center;
+  height: 48px;
+  font-family: var(--font-family-heading);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: var(--color-white);
+}
+
+.courses-cards {
+  flex-direction: column-reverse;
+  width: 880px;
+  height: 848px;
+}
+
+.courses-card-1 {
+  display: flex;
+  background-color: var(--color-accent-yellow);
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+
+.CardTitle {
+  flex: 1;
+  position: relative;
+}
+
+.courses-live-1:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.courses-title-1::first-child {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0);
+  color: var(--color-white);
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  font-family: var(--font-family-heading);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0em;
+}
+
+.CardBody:last-child {
+  flex: 1;
+  padding: 20px;
+}
+
+.card-1-main-text {
+  color: var(--color-black);
+  height: 77px;
+  font-family: var(--font-family-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0em;
+}
+
+.card-1-sub-text {
+  color: var(--color-accent-red);
+  text-align: right;
+}
+.courses-card-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-accent-yellow);
+  font-size: 16px;
+  width: 800px;
+  height: 150px;
+  border-radius: 0px;
+  box-shadow: 4px 4px 0px 0px rgba(242, 5, 116, 1);
 }
